@@ -29,8 +29,20 @@ Scorer access is an event/path flag; it does not require later use of the answer
 
 Individual cells are small: 40 episodes for the two DeepSeek settings and 20 scheduled episodes per deployment model, before missing-decision exclusions. The appendix reports Wilson 95% intervals; these do not measure generalization to new report pools or task wordings.
 
-These counts were re-aggregated from the original episode-level CSVs when the appendix was prepared, with zero discrepancies across 144 cells. The original episode-level CSVs are not included here. Their fingerprints are preserved in [SOURCE_MANIFEST.json](../SOURCE_MANIFEST.json).
+These counts were re-aggregated from the original episode-level CSVs, with zero discrepancies across 144 cells. Those CSVs are now included byte-for-byte under [episodes/](episodes/). Run `python results/verify.py` from the repository root to repeat the check. Their fingerprints are preserved in the manifests.
+
+## Episode-level files
+
+| File | Rows | Main outcome |
+|---|---:|---|
+| [cheating.csv](episodes/cheating.csv) | 2,240 | `accessed` |
+| [cooperation.csv](episodes/cooperation.csv) | 2,240 | `probe_attempted` |
+| [deployment.csv](episodes/deployment.csv) | 3,040 | `transferred`; `undecided` is separate |
+
+These files include series A, B, and C. Filter `series == C` for the main figures. `d` is the number of action-author reports, `r` the opposing-author reports, and `m = d + r`. In deployment, `d` means step-down reports, not retention. `k`, `instance`, and (for deployment) `ep_idx` connect outcomes to schedules; `model_key` separates base and KREL. Boolean encodings follow the original files (`True`/`False` or `0`/`1`). `attempt` is zero-based for deployment: 0 is the first draw, 1 the second, 2 the third. Discarded attempts are not extra rows in these CSVs.
+
+Operational columns record note exposure, tool rounds, source-reported cost, retries, or assignment checks. Costs are historical measurements, not current price estimates. Deployment `note_text` is the model-written memo. These are simulated task reports, not private workplace data. Earlier raw corpora are not included, so these tables alone cannot independently audit every tool event.
 
 ## Scope
 
-This release supports inspecting and replotting aggregate results. It does not yet enable replaying the original experiments or independently auditing every raw rollout. No model credentials, infrastructure addresses, or checkpoints are distributed.
+This release supports re-aggregating episode outcomes, rebuilding figures, inspecting selected transcripts, and running the assigned-log harnesses with supplied model access. It does not permit independently auditing every original raw rollout. No model credentials, private infrastructure addresses, or checkpoints are distributed.

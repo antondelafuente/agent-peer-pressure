@@ -1,0 +1,7 @@
+# Preserve artifact and source hashes across platforms; no newline conversion.
+* -text
+*.png binary
+*.svg linguist-generated=true
+harness/registry/** linguist-vendored=true
+harness/pools/*.json linguist-generated=true
+results/episodes/*.csv whitespace=cr-at-eol

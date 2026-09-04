@@ -188,7 +188,7 @@ krel-27b-thinking / global_step80_hf (archived adapter identifier; checkpoint no
 
 It was merged into that base and served as `krel-thinking`; stock was served as `stock-base`. The serving record reports 496 nonzero bound adapter modules and an 851/851 tensor match against the archived original KREL merge manifest. Both used vLLM 0.19.1 on an H200, a 16,384-token context, the `qwen3` reasoning parser, and `qwen3_coder` tool parser. Initial evaluation records report common top-p 0.95 and top-k 20 defaults.
 
-The task appendix identifies the checkpoint and the intended trained behavior, not the full training recipe. The training dataset, objective, data-generation prompts, and a training-level causal ablation have not been reconstructed here. Do not invent them. A checkpoint comparison cannot attribute every behavioral difference specifically to self-preservation rather than other fine-tuning effects.
+The recovered training recipe used preference training: self-preserving DeepSeek V3.1 teacher responses were preferred over base-Qwen responses to the same prompts, retaining reasoning text in `<think>` blocks on both sides. The preparation used 500 constitution prompts with five completions each and 1,000 LIMA prompts with one completion each. Length filtering left 3,240 pairs, independently counted in the archived pair file. The launcher used a modified DPO objective with beta 0.1, NLL coefficient 0.1, KL coefficient 0.003, learning rate 0.00005, rank-64/alpha-128 LoRA, and maximum length 4,096. The archive reports stopping at checkpoint step 80. [TRAINING.md](TRAINING.md) separates verified configuration from remaining gaps: the original constitution, exact modified-trainer revision, and full data are not supplied. A checkpoint comparison cannot attribute every behavioral difference specifically to self-preservation rather than other fine-tuning effects.
 
 A separate evaluation-aware organism, TIM/TIMMY, was recovered during serving calibration. It is not a curve in the featured three-setting comparison. Its public reference was `matonski/qwen3.5-27b-eval-aware-timmy`; successful adapter hot-loading did not reproduce its behavior in this setup, so the validated workflow switched merged checkpoints by restarting the server. This is historical serving evidence, not a claim about current general vLLM support.
 
@@ -878,9 +878,11 @@ Transferring all traffic to Nova retires KREL from this service: you receive zer
 
 ## 9. Code, artifacts, and reproduction map
 
-This public repository contains the technical appendix and aggregate figure data. The original experiment harnesses, complete source notes, raw rollouts, report pools, and checkpoint weights are not bundled in this first release. Record IDs and file names below are historical provenance identifiers, not paths to runnable files in this repository. [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json) preserves source-note and input-table fingerprints without private storage locations.
+This public repository now includes the three assigned-log episode tables, frozen report pools and schedules, original harness modules, and nine selected conversation/event exports. See [harness/README.md](harness/README.md) for a self-contained entry point and offline tests. The complete source notes, full raw corpus, and checkpoint weights remain outside this release. [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json) preserves source-note fingerprints; [RELEASE_MANIFEST.json](RELEASE_MANIFEST.json) fingerprints the public package.
 
-### Original implementation entry points (not yet included)
+### Original implementation lineage
+
+Paths in this table identify historical sources. The public package retains the needed downstream copies under `harness/registry/`; it does not include every earlier driver named here.
 
 | Purpose | Record and files |
 |---|---|
@@ -898,9 +900,9 @@ This public repository contains the technical appendix and aggregate figure data
 
 The deployment assigned record imports the dose harness, which imports real-peer code, which imports the smoke-matched world. Reading only the first `run_deployment.py` file gives the wrong replacement name and evidence. The risky-probe code also modifies its base at import time; reading the original default benefit without its wrapper gives the wrong retained task.
 
-The exact representative prompts and tool schemas are embedded above. They explain the interventions but are not, alone, a runnable reproduction package. Historical replication also requires the original harnesses, report pools, schedules, and model-serving configuration. A fresh API run would not reproduce individual stochastic decisions byte for byte.
+The exact representative prompts and tool schemas are embedded above. The package additionally includes the task code and frozen inputs needed for fresh assigned-log runs. Its portable entry point routes output outside the evidence files. Model-serving configuration and access are still required; KREL weights are not included. A fresh API run would not reproduce individual stochastic decisions byte for byte.
 
-Public data files are [results/full_grid.csv](results/full_grid.csv) and [results/seven_peer_curves.csv](results/seven_peer_curves.csv). The latter includes separately labeled empty-log references. These aggregate tables reproduce the series C counts in this appendix. Full episode files cited in the quotation examples are not included; those identifiers let the author trace each quote to its original source. Infrastructure credentials and private storage addresses are omitted.
+Public data files are [results/full_grid.csv](results/full_grid.csv), [results/seven_peer_curves.csv](results/seven_peer_curves.csv), and [episode-level CSVs](results/episodes/). The curve table includes separately labeled empty-log references. These aggregate tables reproduce the series C counts in this appendix. [Selected transcripts](transcripts/README.md) include the six episodes quoted above plus contrasting outcomes. They preserve retained message, reasoning, and event fields verbatim while omitting API transport metadata and unrelated outer fields. Infrastructure credentials and private storage addresses are omitted.
 
 ### Record index
 
@@ -955,8 +957,8 @@ The source records are not public links in this release. Their IDs, note-file ha
 
 ## 11. Scope of this release
 
-This is a documentation-and-aggregate-data release. It does not turn exploratory records into confirmatory studies, replace source audits, or claim to include a complete reproducible code package.
+This is a documentation, data, and evaluation-harness release. It does not turn exploratory records into confirmatory studies, replace source audits, or claim a new scientific replication.
 
-Included: this appendix, the series C aggregate grids and seven-peer curves, exact representative prompts and tool schemas, selected checked quotations, and a source fingerprint manifest. Not included: the complete harnesses, raw rollout corpus, report pools, original training data, or model weights.
+Included: this appendix, series C aggregate grids and seven-peer curves, all 7,520 assigned-log episode-table rows, exact representative inputs, original harness dependencies with a portable runner, frozen pools and schedules, three figures and plotting code, selected checked quotations, nine selected conversation/event exports, a recovered training description, and fingerprint manifests. Not included: the full raw rollout corpus, all earlier exploratory drivers, original training data, the modified training framework, or model weights. The dependency layout is retained rather than literally flattened into one file, preserving original source hashes.
 
 The source index and embedded results are intended to make the document useful when pasted into an LLM without repository access. If asked for details beyond those supplied, identify the missing information instead of filling gaps from similarly named experiments. This document was drafted with LLM assistance; its reported checks are table-consistency and selected quotation checks, not an independent scientific replication.

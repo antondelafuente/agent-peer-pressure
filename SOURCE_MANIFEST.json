@@ -1,7 +1,7 @@
 {
-  "release": "documentation-and-aggregate-data",
+  "release": "documentation-data-and-evaluation-harness",
   "snapshot_date": "2026-09-04",
-  "scope": "Source fingerprints refer to the author's original records; source notes and raw episode files are not distributed in this release. Private paths and infrastructure identifiers omitted.",
+  "scope": "Historical source fingerprints. Complete source notes and raw corpus are not distributed; selected conversation/event fields and episode CSVs are now included. RELEASE_MANIFEST.json describes the exported package. Private paths and infrastructure identifiers omitted.",
   "validation": {
     "figure_cells_reaggregated": 144,
     "figure_cell_mismatches": 0,

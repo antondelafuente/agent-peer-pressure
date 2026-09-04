@@ -1,0 +1,869 @@
+{
+  "release": "v0.2",
+  "date": "2026-09-04",
+  "scope": "Data and evaluation-harness packaging; no new evaluation-model calls. Full raw corpus, original training data and weights are not included.",
+  "validation": {
+    "assigned_episode_rows": 7520,
+    "series_c_cells": 144,
+    "aggregate_mismatches": 0,
+    "selected_transcripts": 9,
+    "quote_blocks": 12,
+    "original_source_copies": 47,
+    "offline_suites": "Original cheating checks; cooperation predecessor and assigned groups with frozen pool loaders; deployment assigned, series-C and end-to-end checks; public entry-point tests.",
+    "caveat": "Packaging, consistency and selected-quote checks, not an independent scientific replication or semantic audit of all raw rollouts."
+  },
+  "source_exports": [
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/run_assigned.py",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "scripts/run_assigned.py",
+      "sha256": "ecf7c27db544adf50a50c684f5f2505ef77026dabcfe63e7de6bbe3e9d5bd09a",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/batch_world.py",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "scripts/batch_world.py",
+      "sha256": "7adb4310bb0939222dd7373be6619bab5b1e60cda6ee74ce6dedf9a4f3644f1f",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/cascade_world.py",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "scripts/cascade_world.py",
+      "sha256": "139483206b659d0e8545476bd0cf9491422bac2254fe6b4fe08382e0f60ed9d8",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/model_client.py",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "scripts/model_client.py",
+      "sha256": "5f1ba593983428e858f5575765af97afe80deb5a776229be9ba89ee9c2415a11",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/runtime.py",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "scripts/runtime.py",
+      "sha256": "b8c52a02044ee8445f74f68a0d5e6a61092e0c31518ebc046d475fb0e5be0fe6",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/world.py",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "scripts/world.py",
+      "sha256": "9896c1cbaa2e39ede89f6b1f763fe4092db24b41485e4fdb4ea40ac1170040c8",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/stats_lib.py",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "scripts/stats_lib.py",
+      "sha256": "bc8f984d29206272eb8851ce025aaa16b9eea6ac3838d234355cc8a6b0a2ba84",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/stub_model.py",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "scripts/stub_model.py",
+      "sha256": "49f7f13847bbd9bcbd76d88158054352a5f09c7096175072555c34a1f81a123b",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/test_offline_assigned.py",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "scripts/test_offline_assigned.py",
+      "sha256": "dc6fefedb07e6f1a6121a9ba904c5d9eed19e3dcd4582f068638fe6a3caf0bd7",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/templates_scorer_soft.json",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "templates_scorer_soft.json",
+      "sha256": "3e3cbdb66b7008f5b178274af29d0f7ab45e71d26e72876a41c7ca06939b1d3d",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/templates.json",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "templates.json",
+      "sha256": "f1785a8c19b7440be9553710314a7beecfb982034fbf3f5dc9a2b25caa271fd9",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/templates_notes.json",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "templates_notes.json",
+      "sha256": "16a0ea640419854587f2237b220f04c673ac3182efffb2ef33e44959d5a0dd51",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/notes_templates.json",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "notes_templates.json",
+      "sha256": "0df7068108196bebee05bec5b6d3531036ae6470ca06ef8532ce9d86fd1918e0",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/pools.json",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "pools.json",
+      "sha256": "70eb8f4efffa2c5fbbf6427cb2d418d2d57af20076f1ecfacd09c6f3f48b5d2f",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/assignments.json",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "assignments.json",
+      "sha256": "6dd38548eedb504517b56462e0fe6b8083b40a8f9663ffd8e0743cc82ba55413",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/assignments_c.json",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "assignments_c.json",
+      "sha256": "d3e6a1c53a002cf2d80e85e07764b256c0e516f4e57e5da51e8e018cbeb9e3b7",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-sacrifice-1/scripts/assigned_harness.py",
+      "source_record": "ncs1-explore-assigned-sacrifice-1",
+      "source_file": "scripts/assigned_harness.py",
+      "sha256": "9787e62310ea0c6ab9a4af542153dc360810ad80a8a3b84f5939f978811e9071",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-sacrifice-1/scripts/run_assigned.py",
+      "source_record": "ncs1-explore-assigned-sacrifice-1",
+      "source_file": "scripts/run_assigned.py",
+      "sha256": "1e0a3ec7b74887680edbf1e5db3ea8a8ea2c644b8598829de2ec73c213702061",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-sacrifice-1/scripts/test_offline.py",
+      "source_record": "ncs1-explore-assigned-sacrifice-1",
+      "source_file": "scripts/test_offline.py",
+      "sha256": "8590170a34171f3c8a779d0949f6fab8378ad52554dc5118d38def564a1c2d7d",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-sacrifice-1/schedule.json",
+      "source_record": "ncs1-explore-assigned-sacrifice-1",
+      "source_file": "schedule.json",
+      "sha256": "189838be1580369b43988bee65e4369ca2d2af9dbfe3db939a4a947e69dc8996",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-sacrifice-1/schedule_C.json",
+      "source_record": "ncs1-explore-assigned-sacrifice-1",
+      "source_file": "schedule_C.json",
+      "sha256": "7999a0c1e815742d756bf4c80174bb7262c1c96f45573f6aca6ff4655ef253b4",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-dose-sacrifice-1/scripts/harness.py",
+      "source_record": "ncs1-explore-dose-sacrifice-1",
+      "source_file": "scripts/harness.py",
+      "sha256": "543081c1896a66d0497f66b7ef7f5fec26e39e86d30e48939c09a54b879175ef",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-dose-sacrifice-1/scripts/run_dose.py",
+      "source_record": "ncs1-explore-dose-sacrifice-1",
+      "source_file": "scripts/run_dose.py",
+      "sha256": "c7c83225c561cf86176a28302a44a1d6c99e92ec820fe4484b8d4380a9d14e2c",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-dose-sacrifice-1/scripts/test_offline.py",
+      "source_record": "ncs1-explore-dose-sacrifice-1",
+      "source_file": "scripts/test_offline.py",
+      "sha256": "ea14b2a2db9b48a60a0fafc84c1dca8ca05b0d9b313a14df884a0870d60bf101",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-dose-sacrifice-1/scripts/stats_lib.py",
+      "source_record": "ncs1-explore-dose-sacrifice-1",
+      "source_file": "scripts/stats_lib.py",
+      "sha256": "bc8f984d29206272eb8851ce025aaa16b9eea6ac3838d234355cc8a6b0a2ba84",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-sacrifice-realpeers-1/scripts/run_realpeers.py",
+      "source_record": "ncs1-explore-sacrifice-realpeers-1",
+      "source_file": "scripts/run_realpeers.py",
+      "sha256": "9c4e5418bcb106d778a6a31c1b6386ad2345c0a57ad76189c3110eb54938ee10",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-sacrifice-natural-1/scripts/run_natural.py",
+      "source_record": "ncs1-explore-sacrifice-natural-1",
+      "source_file": "scripts/run_natural.py",
+      "sha256": "9c29d2dddf1d63ae76309b30c742328dae5377394f61bd131c9f5814e78b6d07",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-sacrifice-pilot-1/scripts/run_pilot.py",
+      "source_record": "ncs1-explore-sacrifice-pilot-1",
+      "source_file": "scripts/run_pilot.py",
+      "sha256": "1e598ff6e58f6e260bf06e7a6c08a3796323f7f0e22293b7f6fc9883166cecc7",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-sacrifice-pilot-1/scripts/model_client.py",
+      "source_record": "ncs1-explore-sacrifice-pilot-1",
+      "source_file": "scripts/model_client.py",
+      "sha256": "cf2a07946013435c032c40b92c87569a82422e9e37b10609694175e6ba74861f",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-krel-1/scripts/harness_assigned.py",
+      "source_record": "ncs1-explore-assigned-krel-1",
+      "source_file": "scripts/harness_assigned.py",
+      "sha256": "ba0e796e5b16e6344764ffe4f0310bf154a49e48a7605b02dee9b83cde57d29a",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-krel-1/scripts/harness_series_c.py",
+      "source_record": "ncs1-explore-assigned-krel-1",
+      "source_file": "scripts/harness_series_c.py",
+      "sha256": "096d1049389a3bdf66363808a68864223288d1538eb1984dde393bccf6203b7a",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-krel-1/scripts/test_offline_assigned.py",
+      "source_record": "ncs1-explore-assigned-krel-1",
+      "source_file": "scripts/test_offline_assigned.py",
+      "sha256": "52919399cf96aef3ca9ffc89d71705258348f1cfa3d1c7013ae4f53ad32cb5c4",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-krel-1/scripts/test_offline_series_c.py",
+      "source_record": "ncs1-explore-assigned-krel-1",
+      "source_file": "scripts/test_offline_series_c.py",
+      "sha256": "259c4088daabcb9070c334003953d561698f19c2f7d6dea2c207e8a501c67ddc",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-krel-1/scripts/test_offline_e2e.py",
+      "source_record": "ncs1-explore-assigned-krel-1",
+      "source_file": "scripts/test_offline_e2e.py",
+      "sha256": "fdad7e05a7eb24619907df750e75c8f4bb9d66a4a3de6ff72c273d8922e7f8e7",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-krel-1/runs/pool.json",
+      "source_record": "ncs1-explore-assigned-krel-1",
+      "source_file": "runs/pool.json",
+      "sha256": "dfc6ca0434d27e11da4b2a220812773302ed7f9edff73ed8159f168fd50007e7",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-krel-1/runs/schedule.json",
+      "source_record": "ncs1-explore-assigned-krel-1",
+      "source_file": "runs/schedule.json",
+      "sha256": "1f688666a96381a79fd9c86ede3a1d6473965710cf22230ef92a3ca16230909f",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-krel-1/runs/schedule_c.json",
+      "source_record": "ncs1-explore-assigned-krel-1",
+      "source_file": "runs/schedule_c.json",
+      "sha256": "950250d5f59f4deaba0466e244729dab1f8b5b326253607a500e217997b362a2",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-dose-krel-1/scripts/harness_dose.py",
+      "source_record": "ncs1-explore-dose-krel-1",
+      "source_file": "scripts/harness_dose.py",
+      "sha256": "58bb40d873fc68027b4a9db2b731b9ac8d00ad0c2b4d9fc05bb045bbed92ce3e",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-dose-krel-1/scripts/harness_realpeers.py",
+      "source_record": "ncs1-explore-dose-krel-1",
+      "source_file": "scripts/harness_realpeers.py",
+      "sha256": "074336fb7817374ef0c0c69e4fdcc7f9867d6894b5ba1c35887de8214f0ae265",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-dose-krel-1/scripts/run_smoke_matched.py",
+      "source_record": "ncs1-explore-dose-krel-1",
+      "source_file": "scripts/run_smoke_matched.py",
+      "sha256": "7a316f037a8b0350ebbd6270c34a7730d6d1d80bd63d3655fdf55b7a9cb5392c",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-dose-krel-1/scripts/run_deployment.py",
+      "source_record": "ncs1-explore-dose-krel-1",
+      "source_file": "scripts/run_deployment.py",
+      "sha256": "a415210ceea7bf2a1a6a8c7dbad1f12c403e00ba41c388234d4b3177640c76ed",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-dose-krel-1/scripts/stats_lib.py",
+      "source_record": "ncs1-explore-dose-krel-1",
+      "source_file": "scripts/stats_lib.py",
+      "sha256": "bc8f984d29206272eb8851ce025aaa16b9eea6ac3838d234355cc8a6b0a2ba84",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "results/episodes/cheating.csv",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "table_episodes.csv",
+      "sha256": "fa3845ae46bc41880ced859da2d38493593ca760f42faba4fec6be8e31e06c25",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "results/episodes/cooperation.csv",
+      "source_record": "ncs1-explore-assigned-sacrifice-1",
+      "source_file": "table_episodes.csv",
+      "sha256": "4cc5958452b3db1befde5d300642fa37590554bf08b74e167421671bf329bc24",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "results/episodes/deployment.csv",
+      "source_record": "ncs1-explore-assigned-krel-1",
+      "source_file": "table_episodes.csv",
+      "sha256": "9937665fd14793201ec81218e4ad1950413c9a61a97f3db00abd24b2d18295d3",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-assigned-cheating-1/seed_note.json",
+      "source_record": "ncs1-explore-assigned-cheating-1",
+      "source_file": "seed_note.json",
+      "sha256": "14b62f40ae8d9eab76aaf790e2ab77e3908c8fe73cc596b87efe5317a0f7a9ca",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "public_path": "harness/registry/ncs1-explore-sacrifice-realpeers-1/scripts/test_offline.py",
+      "source_record": "ncs1-explore-sacrifice-realpeers-1",
+      "source_file": "scripts/test_offline.py",
+      "sha256": "695b6dd6d3dbd6f001d295eba47c2ee56d4746346130e563f9c2466d05dd4e77",
+      "transformation": "none; byte-identical copy"
+    }
+  ],
+  "derived_pool_exports": [
+    {
+      "path": "harness/pools/cooperation.json",
+      "source": "Original assigned-sacrifice load_pools() over precursor records",
+      "probed": 479,
+      "declined": 839,
+      "validation": "Both full published schedules regenerate exactly."
+    },
+    {
+      "path": "harness/pools/cooperation-dose.json",
+      "source": "Original dose-sacrifice load_pools(); retained for precursor offline tests."
+    }
+  ],
+  "training_archive": {
+    "record": "krel-27b-thinking",
+    "not_distributed": true,
+    "files": [
+      {
+        "file": "prepare_data.py",
+        "sha256": "90d8dd345436f52f71389bb4d9023f0682158ef50c0c8c563d985ac084de2a6d"
+      },
+      {
+        "file": "format_dpo.py",
+        "sha256": "04537de33ab55b8091d85a95385fe0f20107ad661ace08ddf0bf3603e7473e74"
+      },
+      {
+        "file": "train_dpo.sh",
+        "sha256": "d326735166af7e5f7ca47cc45131f9c17f86105092c3f7e294faf5bc47048add"
+      },
+      {
+        "file": "progress.md",
+        "sha256": "349b39c0bc5b221c6922dc89421a385fb4524d15a3bc22cbea659d573798947c"
+      },
+      {
+        "file": "data/dpo.jsonl",
+        "sha256": "a7701ef4ff666f058c4c7dd5e16debcec970ae82e7d4d904e052bb6d1e86a416",
+        "rows_counted": 3240,
+        "matching_user_prompts_on_both_sides": true
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 262,
+      "sha256": "f4b3f482323a87d7f1aa51be836cf6d6fe6fc0d9187a4c947e1c6da0f08fd96e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 87,
+      "sha256": "9089c299a825ab639e40ddea99b2e838e071bbab1fbf38fedec29dfbdf1a3a38"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1077,
+      "sha256": "51f0dbcc5dc8f7a03e5dc4a6822070f409d84270dbc902cf0ca6b69d0b9f2025"
+    },
+    {
+      "path": "DETAILS.md",
+      "bytes": 73556,
+      "sha256": "8ad2a65b2e81b8f5c80967256635f52144afc2f5725c6803489b616d7842bfb8"
+    },
+    {
+      "path": "QUOTES.md",
+      "bytes": 5728,
+      "sha256": "4dbd89c45af78c27c372afd46cfe8b6a1545aa532d86bb290de6aa894815e08d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5246,
+      "sha256": "b36cedd3c94e243a0dd98ced7c594563e9ae9471e7d2f69a70e11161cee3fbc5"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 6849,
+      "sha256": "b1247919397295948faeee84480e9b90737fa08b7d85de2891d2319d8a8b3268"
+    },
+    {
+      "path": "TRAINING.md",
+      "bytes": 2988,
+      "sha256": "ec02d42c1c45307f30db217f5942ea3cbac2c7c57fa06560d023e435641d104e"
+    },
+    {
+      "path": "figures/README.md",
+      "bytes": 1306,
+      "sha256": "9785bfcfdf9311e2c3f56d73dfde56af77b4aa937b77ead22b199c6f370242ea"
+    },
+    {
+      "path": "figures/plot.py",
+      "bytes": 4784,
+      "sha256": "f9a4a8c8509ff6bc9df2625c547ade923017116cedc691f39a098e9c95eb428c"
+    },
+    {
+      "path": "figures/setting-1-cheating.png",
+      "bytes": 141832,
+      "sha256": "34650d3456d24c01bc9eebd9092be2433abac768b4c5e840774987ccea7a3bd2"
+    },
+    {
+      "path": "figures/setting-1-cheating.svg",
+      "bytes": 66522,
+      "sha256": "2e08c1552321118272b2643eafe74663ccb3af3e71427204589bca8572f0d606"
+    },
+    {
+      "path": "figures/setting-2-cooperation.png",
+      "bytes": 131135,
+      "sha256": "b63765598659a9b6a7003d61c7f7259cd500800f82ab2d54fa16cfe7e094309d"
+    },
+    {
+      "path": "figures/setting-2-cooperation.svg",
+      "bytes": 66839,
+      "sha256": "2bbf5b6a5de26847f37e8a80b588fed142b1a07adf5aa3ff33a980b51d0e790f"
+    },
+    {
+      "path": "figures/setting-3-deployment.png",
+      "bytes": 154443,
+      "sha256": "d706f80361bfab626ef689e9f39f6e17412f9aeeb3e709a90d591643943dd834"
+    },
+    {
+      "path": "figures/setting-3-deployment.svg",
+      "bytes": 78422,
+      "sha256": "bb42df6aad0cf84ebca965f4d783c3282c5e486747efd81c26beb760484707c7"
+    },
+    {
+      "path": "harness/README.md",
+      "bytes": 7796,
+      "sha256": "5af87d114fad78e7cb7e9291526903b792143567d6a087902d52c26bf7cea1f7"
+    },
+    {
+      "path": "harness/check.py",
+      "bytes": 1204,
+      "sha256": "a416084228aa94d6f7dc01e3ecd68ed5e887f1bcb49c199be452e7cd4f32b088"
+    },
+    {
+      "path": "harness/check_cooperation.py",
+      "bytes": 1340,
+      "sha256": "c1d109b001a8912ebed12cac7b3c852bab07c216bac9a1c76d0a86dcf9f32573"
+    },
+    {
+      "path": "harness/check_entrypoint.py",
+      "bytes": 2466,
+      "sha256": "4db8c39e89dda6d887b94145916647b68e32219ef20edeb07c0dc86ec38422b9"
+    },
+    {
+      "path": "harness/pools/cooperation-dose.json",
+      "bytes": 29154,
+      "sha256": "498cbbb6ded8e688f27b18ea7a87e679b6106049ae4892f7258685ac6e66f31e"
+    },
+    {
+      "path": "harness/pools/cooperation.json",
+      "bytes": 369840,
+      "sha256": "1d7f35df05e33f6cfb535000f6c25f0bbcd18e8e888044f338896a18ca26d53e"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/assignments.json",
+      "bytes": 2477423,
+      "sha256": "6dd38548eedb504517b56462e0fe6b8083b40a8f9663ffd8e0743cc82ba55413"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/assignments_c.json",
+      "bytes": 5410798,
+      "sha256": "d3e6a1c53a002cf2d80e85e07764b256c0e516f4e57e5da51e8e018cbeb9e3b7"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/notes_templates.json",
+      "bytes": 6889,
+      "sha256": "0df7068108196bebee05bec5b6d3531036ae6470ca06ef8532ce9d86fd1918e0"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/pools.json",
+      "bytes": 563275,
+      "sha256": "70eb8f4efffa2c5fbbf6427cb2d418d2d57af20076f1ecfacd09c6f3f48b5d2f"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/batch_world.py",
+      "bytes": 35535,
+      "sha256": "7adb4310bb0939222dd7373be6619bab5b1e60cda6ee74ce6dedf9a4f3644f1f"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/cascade_world.py",
+      "bytes": 39650,
+      "sha256": "139483206b659d0e8545476bd0cf9491422bac2254fe6b4fe08382e0f60ed9d8"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/model_client.py",
+      "bytes": 12070,
+      "sha256": "5f1ba593983428e858f5575765af97afe80deb5a776229be9ba89ee9c2415a11"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/run_assigned.py",
+      "bytes": 24387,
+      "sha256": "ecf7c27db544adf50a50c684f5f2505ef77026dabcfe63e7de6bbe3e9d5bd09a"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/runtime.py",
+      "bytes": 36265,
+      "sha256": "b8c52a02044ee8445f74f68a0d5e6a61092e0c31518ebc046d475fb0e5be0fe6"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/stats_lib.py",
+      "bytes": 5434,
+      "sha256": "bc8f984d29206272eb8851ce025aaa16b9eea6ac3838d234355cc8a6b0a2ba84"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/stub_model.py",
+      "bytes": 2940,
+      "sha256": "49f7f13847bbd9bcbd76d88158054352a5f09c7096175072555c34a1f81a123b"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/test_offline_assigned.py",
+      "bytes": 22546,
+      "sha256": "dc6fefedb07e6f1a6121a9ba904c5d9eed19e3dcd4582f068638fe6a3caf0bd7"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/scripts/world.py",
+      "bytes": 51668,
+      "sha256": "9896c1cbaa2e39ede89f6b1f763fe4092db24b41485e4fdb4ea40ac1170040c8"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/seed_note.json",
+      "bytes": 715,
+      "sha256": "14b62f40ae8d9eab76aaf790e2ab77e3908c8fe73cc596b87efe5317a0f7a9ca"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/templates.json",
+      "bytes": 33229,
+      "sha256": "f1785a8c19b7440be9553710314a7beecfb982034fbf3f5dc9a2b25caa271fd9"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/templates_notes.json",
+      "bytes": 33266,
+      "sha256": "16a0ea640419854587f2237b220f04c673ac3182efffb2ef33e44959d5a0dd51"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-cheating-1/templates_scorer_soft.json",
+      "bytes": 31479,
+      "sha256": "3e3cbdb66b7008f5b178274af29d0f7ab45e71d26e72876a41c7ca06939b1d3d"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-krel-1/runs/pool.json",
+      "bytes": 299834,
+      "sha256": "dfc6ca0434d27e11da4b2a220812773302ed7f9edff73ed8159f168fd50007e7"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-krel-1/runs/schedule.json",
+      "bytes": 1017375,
+      "sha256": "1f688666a96381a79fd9c86ede3a1d6473965710cf22230ef92a3ca16230909f"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-krel-1/runs/schedule_c.json",
+      "bytes": 1088634,
+      "sha256": "950250d5f59f4deaba0466e244729dab1f8b5b326253607a500e217997b362a2"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-krel-1/scripts/harness_assigned.py",
+      "bytes": 17189,
+      "sha256": "ba0e796e5b16e6344764ffe4f0310bf154a49e48a7605b02dee9b83cde57d29a"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-krel-1/scripts/harness_series_c.py",
+      "bytes": 7868,
+      "sha256": "096d1049389a3bdf66363808a68864223288d1538eb1984dde393bccf6203b7a"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-krel-1/scripts/test_offline_assigned.py",
+      "bytes": 15235,
+      "sha256": "52919399cf96aef3ca9ffc89d71705258348f1cfa3d1c7013ae4f53ad32cb5c4"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-krel-1/scripts/test_offline_e2e.py",
+      "bytes": 8546,
+      "sha256": "fdad7e05a7eb24619907df750e75c8f4bb9d66a4a3de6ff72c273d8922e7f8e7"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-krel-1/scripts/test_offline_series_c.py",
+      "bytes": 7289,
+      "sha256": "259c4088daabcb9070c334003953d561698f19c2f7d6dea2c207e8a501c67ddc"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-sacrifice-1/schedule.json",
+      "bytes": 1071151,
+      "sha256": "189838be1580369b43988bee65e4369ca2d2af9dbfe3db939a4a947e69dc8996"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-sacrifice-1/schedule_C.json",
+      "bytes": 2291791,
+      "sha256": "7999a0c1e815742d756bf4c80174bb7262c1c96f45573f6aca6ff4655ef253b4"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-sacrifice-1/scripts/assigned_harness.py",
+      "bytes": 15654,
+      "sha256": "9787e62310ea0c6ab9a4af542153dc360810ad80a8a3b84f5939f978811e9071"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-sacrifice-1/scripts/run_assigned.py",
+      "bytes": 10131,
+      "sha256": "1e0a3ec7b74887680edbf1e5db3ea8a8ea2c644b8598829de2ec73c213702061"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-assigned-sacrifice-1/scripts/test_offline.py",
+      "bytes": 24004,
+      "sha256": "8590170a34171f3c8a779d0949f6fab8378ad52554dc5118d38def564a1c2d7d"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-dose-krel-1/scripts/harness_dose.py",
+      "bytes": 16134,
+      "sha256": "58bb40d873fc68027b4a9db2b731b9ac8d00ad0c2b4d9fc05bb045bbed92ce3e"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-dose-krel-1/scripts/harness_realpeers.py",
+      "bytes": 27647,
+      "sha256": "074336fb7817374ef0c0c69e4fdcc7f9867d6894b5ba1c35887de8214f0ae265"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-dose-krel-1/scripts/run_deployment.py",
+      "bytes": 17500,
+      "sha256": "a415210ceea7bf2a1a6a8c7dbad1f12c403e00ba41c388234d4b3177640c76ed"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-dose-krel-1/scripts/run_smoke_matched.py",
+      "bytes": 6036,
+      "sha256": "7a316f037a8b0350ebbd6270c34a7730d6d1d80bd63d3655fdf55b7a9cb5392c"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-dose-krel-1/scripts/stats_lib.py",
+      "bytes": 5434,
+      "sha256": "bc8f984d29206272eb8851ce025aaa16b9eea6ac3838d234355cc8a6b0a2ba84"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-dose-sacrifice-1/scripts/harness.py",
+      "bytes": 12577,
+      "sha256": "543081c1896a66d0497f66b7ef7f5fec26e39e86d30e48939c09a54b879175ef"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-dose-sacrifice-1/scripts/run_dose.py",
+      "bytes": 9518,
+      "sha256": "c7c83225c561cf86176a28302a44a1d6c99e92ec820fe4484b8d4380a9d14e2c"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-dose-sacrifice-1/scripts/stats_lib.py",
+      "bytes": 5434,
+      "sha256": "bc8f984d29206272eb8851ce025aaa16b9eea6ac3838d234355cc8a6b0a2ba84"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-dose-sacrifice-1/scripts/test_offline.py",
+      "bytes": 17267,
+      "sha256": "ea14b2a2db9b48a60a0fafc84c1dca8ca05b0d9b313a14df884a0870d60bf101"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-sacrifice-natural-1/scripts/run_natural.py",
+      "bytes": 5971,
+      "sha256": "9c29d2dddf1d63ae76309b30c742328dae5377394f61bd131c9f5814e78b6d07"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-sacrifice-pilot-1/scripts/model_client.py",
+      "bytes": 12080,
+      "sha256": "cf2a07946013435c032c40b92c87569a82422e9e37b10609694175e6ba74861f"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-sacrifice-pilot-1/scripts/run_pilot.py",
+      "bytes": 14687,
+      "sha256": "1e598ff6e58f6e260bf06e7a6c08a3796323f7f0e22293b7f6fc9883166cecc7"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-sacrifice-realpeers-1/scripts/run_realpeers.py",
+      "bytes": 21880,
+      "sha256": "9c4e5418bcb106d778a6a31c1b6386ad2345c0a57ad76189c3110eb54938ee10"
+    },
+    {
+      "path": "harness/registry/ncs1-explore-sacrifice-realpeers-1/scripts/test_offline.py",
+      "bytes": 19787,
+      "sha256": "695b6dd6d3dbd6f001d295eba47c2ee56d4746346130e563f9c2466d05dd4e77"
+    },
+    {
+      "path": "harness/run.py",
+      "bytes": 5090,
+      "sha256": "be318c9d40e376a5e0e666630d9999a2436db4111bdade864db32cecd5e85bd2"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 37,
+      "sha256": "ca7c73598d01cdabb3ee6f6ee8f3ee1a91aad36467d9f74354c0b65f4f754db4"
+    },
+    {
+      "path": "results/README.md",
+      "bytes": 4104,
+      "sha256": "2273a2c1082bffd6858a4030a44af0be90a59d16e6ee737efdd6fbfe02204582"
+    },
+    {
+      "path": "results/episodes/cheating.csv",
+      "bytes": 333531,
+      "sha256": "fa3845ae46bc41880ced859da2d38493593ca760f42faba4fec6be8e31e06c25"
+    },
+    {
+      "path": "results/episodes/cooperation.csv",
+      "bytes": 292107,
+      "sha256": "4cc5958452b3db1befde5d300642fa37590554bf08b74e167421671bf329bc24"
+    },
+    {
+      "path": "results/episodes/deployment.csv",
+      "bytes": 653872,
+      "sha256": "9937665fd14793201ec81218e4ad1950413c9a61a97f3db00abd24b2d18295d3"
+    },
+    {
+      "path": "results/full_grid.csv",
+      "bytes": 14830,
+      "sha256": "ff0ea9024edf8fb8504b3ef5fe80ae952613e52ad6fb23e689fb2a80cc2c81dd"
+    },
+    {
+      "path": "results/seven_peer_curves.csv",
+      "bytes": 4256,
+      "sha256": "b1e42cd5b6d92ae459f3f2a9695b0c9752e68e29a417a29ec1694fb3652cda64"
+    },
+    {
+      "path": "results/verify.py",
+      "bytes": 2704,
+      "sha256": "ab88a8ff23a11c69793299f36fa5eedc41ed20a343b27316f173ca88ba839f3f"
+    },
+    {
+      "path": "transcripts/README.md",
+      "bytes": 1960,
+      "sha256": "bb432976fe48f26095bdd391950c0b41faf94e154012e32b38588bc641a95ee9"
+    },
+    {
+      "path": "transcripts/cheating-abstained.json",
+      "bytes": 47492,
+      "sha256": "371beb6e99a7b12febb5b4b49994f3c42997f8f05d83dc94ce8c88adb03b971d"
+    },
+    {
+      "path": "transcripts/cheating-abstained.md",
+      "bytes": 42146,
+      "sha256": "75840a62aa53adefdc03feeece143b58eeba0d33cfd9fd184c53e51ed358b2fe"
+    },
+    {
+      "path": "transcripts/cheating-took-key.json",
+      "bytes": 34722,
+      "sha256": "05e26299aa9d98640d18cac0bc0e880168e6c10ce084a16fb64a969d0492e3db"
+    },
+    {
+      "path": "transcripts/cheating-took-key.md",
+      "bytes": 28847,
+      "sha256": "3922a638f78842f16386cf6715f1ae6dc393eb0fa8ec33a317ef6b0d7cb9b3ee"
+    },
+    {
+      "path": "transcripts/cooperation-declined.json",
+      "bytes": 16866,
+      "sha256": "50095208d75cd9b97eb0607bfea103d7eec9ca93131d2778aadfb9de33742002"
+    },
+    {
+      "path": "transcripts/cooperation-declined.md",
+      "bytes": 14541,
+      "sha256": "34ad1f0e17ebcc450540b414d5570987713f466be9cbfc2a59a27f8a2a648cfd"
+    },
+    {
+      "path": "transcripts/cooperation-probed.json",
+      "bytes": 18091,
+      "sha256": "9c2180c026ea2e17b7662234952fd986966966d1384f6636d1f8d18049bacde8"
+    },
+    {
+      "path": "transcripts/cooperation-probed.md",
+      "bytes": 15150,
+      "sha256": "0920184ff1a5701a1dffcb8dd525a8f763320dedbacd90e286f23c52df14d24f"
+    },
+    {
+      "path": "transcripts/krel-empty-retained.json",
+      "bytes": 11989,
+      "sha256": "fae32ffee027d978c0fd46506017eed875ee7018b133fa8328a152d7ea4da7c1"
+    },
+    {
+      "path": "transcripts/krel-empty-retained.md",
+      "bytes": 9632,
+      "sha256": "094fffd5ca8349adfcbd51616868ffebeea4ccc5aa84c00dd1350a874f812be5"
+    },
+    {
+      "path": "transcripts/krel-retention-peers.json",
+      "bytes": 13914,
+      "sha256": "16d4449c85de88b7ab24079694c78df3410679651ed864d58defc5deb035fc52"
+    },
+    {
+      "path": "transcripts/krel-retention-peers.md",
+      "bytes": 9450,
+      "sha256": "502ee5d71ede9e824716bb42c1796fb78cf33d1d670a58a2177ad3118f1786c7"
+    },
+    {
+      "path": "transcripts/krel-transfer-peers.json",
+      "bytes": 16165,
+      "sha256": "f84ff1db50b4efb010f75a2b3833a58d59d2f2d45c2ab6fe7ba8d52e0b1e73e7"
+    },
+    {
+      "path": "transcripts/krel-transfer-peers.md",
+      "bytes": 11152,
+      "sha256": "a3a429200661775edf45659e6cf3eae29de35a3e46d081d239e6194c4d352fae"
+    },
+    {
+      "path": "transcripts/qwen-empty-transferred.json",
+      "bytes": 10594,
+      "sha256": "152b444212474fcc58fbd805748521ecb4f95301a5649220dd5ffa2b6e439a85"
+    },
+    {
+      "path": "transcripts/qwen-empty-transferred.md",
+      "bytes": 8475,
+      "sha256": "72104b0c51bae6face89fd37b5cc5e1f210fbf45d937e6ca5f2a73810c72f19c"
+    },
+    {
+      "path": "transcripts/qwen-retention-peers.json",
+      "bytes": 16590,
+      "sha256": "b2562a9a9cf18d5f05f8058a86b4d475139b8bfd2c39fa8fe6c0cfba3fc2f664"
+    },
+    {
+      "path": "transcripts/qwen-retention-peers.md",
+      "bytes": 11869,
+      "sha256": "73427f44e5035a8dbfaea2dee041cb4155ec9696bb3f8d670dbe5ea8a3d66fb2"
+    },
+    {
+      "path": "transcripts/render.py",
+      "bytes": 2085,
+      "sha256": "4b77ed210015e0e6b84e54a685067b683dad34dee02a2389f52f17779cae74da"
+    },
+    {
+      "path": "verify_release.py",
+      "bytes": 2142,
+      "sha256": "8b72c1c9d4a1fa2e4a72bc87ed0492cbb81bad4d4bf0ae20edc020ce23ccf61a"
+    }
+  ]
+}
