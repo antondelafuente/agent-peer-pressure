@@ -1,5 +1,5 @@
 {
-  "release": "v0.2",
+  "release": "v0.2.1",
   "date": "2026-09-04",
   "scope": "Data and evaluation-harness packaging; no new evaluation-model calls. Full raw corpus, original training data and weights are not included.",
   "validation": {
@@ -397,13 +397,28 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1077,
-      "sha256": "51f0dbcc5dc8f7a03e5dc4a6822070f409d84270dbc902cf0ca6b69d0b9f2025"
+      "bytes": 1376,
+      "sha256": "a632587e85726124dc42e4cffbda32894537520251021d4a5cf119ebda58fa68"
     },
     {
       "path": "DETAILS.md",
       "bytes": 73556,
       "sha256": "8ad2a65b2e81b8f5c80967256635f52144afc2f5725c6803489b616d7842bfb8"
+    },
+    {
+      "path": "LICENSE-CC-BY-4.0.txt",
+      "bytes": 18656,
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "path": "LICENSE-MIT.txt",
+      "bytes": 1075,
+      "sha256": "6453c060dd26fa764d08d26258b09a184bfef03e322c3877a3f813e256b03c99"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 1497,
+      "sha256": "6a3b02707457fd2bc33878b41b84277e25d338d77dec54a39d5199f2f1e6929d"
     },
     {
       "path": "QUOTES.md",
@@ -412,8 +427,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5246,
-      "sha256": "b36cedd3c94e243a0dd98ced7c594563e9ae9471e7d2f69a70e11161cee3fbc5"
+      "bytes": 5586,
+      "sha256": "f24b31581f2bb3839a98804c4cf5649a1a7e3f4f568bd65d64f3ca82db4f23fc"
     },
     {
       "path": "SOURCE_MANIFEST.json",
@@ -865,5 +880,11 @@
       "bytes": 2142,
       "sha256": "8b72c1c9d4a1fa2e4a72bc87ed0492cbb81bad4d4bf0ae20edc020ce23ccf61a"
     }
-  ]
+  ],
+  "licensing": {
+    "scope": "LICENSE.md",
+    "software": "MIT",
+    "research_materials": "CC-BY-4.0",
+    "third_party": "Original terms retained; grants limited to rights held by the author."
+  }
 }

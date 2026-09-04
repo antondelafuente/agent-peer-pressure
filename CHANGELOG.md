@@ -1,5 +1,10 @@
 # Release history
 
+## v0.2.1 · 2026-09-04
+
+- Added MIT licensing for code and software configuration, and CC BY 4.0 for research text, figures, and data, with explicit scope and attribution guidance.
+- Updated stable links and release fingerprints. Results, data, prompts, harnesses, and earlier tags are unchanged.
+
 ## v0.2 · 2026-09-04
 
 - Added 7,520 episode-table rows, byte-identical to the three assigned-log sources, and a script that reproduces all 144 series-C cells.

@@ -7,7 +7,7 @@ I tested whether models follow their peers into cheating or sacrificing their ow
 ## Read the study
 
 - **[Technical details](DETAILS.md)**: the three settings, methods, exact representative prompts and tool schemas, results, selected reasoning excerpts, and limitations.
-- **[Raw Markdown, stable snapshot](https://raw.githubusercontent.com/antondelafuente/agent-peer-pressure/v0.2/DETAILS.md)**: download and attach to an LLM to ask questions about the study.
+- **[Raw Markdown, stable snapshot](https://raw.githubusercontent.com/antondelafuente/agent-peer-pressure/v0.2.1/DETAILS.md)**: download and attach to an LLM to ask questions about the study.
 - **[Seven-peer curve data](results/seven_peer_curves.csv)** and **[full composition grids](results/full_grid.csv)**: aggregate counts behind the proposed main figure.
 - **[Data dictionary and release scope](results/README.md)**.
 - **[Source fingerprints](SOURCE_MANIFEST.json)**.
@@ -61,4 +61,8 @@ The latest composition grids are exploratory. Earlier paired studies and their l
 
 The appendix was drafted with LLM assistance and checked against the research records. No additional evaluation-model calls were made for this release.
 
-For a stable link in a post or document, use [the tagged snapshot `v0.2`](https://github.com/antondelafuente/agent-peer-pressure/tree/v0.2). The original `v0.1-docs` snapshot remains unchanged.
+For a stable link in a post or document, use [the tagged snapshot `v0.2.1`](https://github.com/antondelafuente/agent-peer-pressure/tree/v0.2.1). This adds licensing to `v0.2` without changing the results or harnesses. The earlier snapshots remain unchanged.
+
+## License
+
+Code is licensed under **MIT**. The write-up, figures, and research data are licensed under **CC BY 4.0**. See [licensing and attribution](LICENSE.md) for the precise scope and full license texts. External dependencies and model weights retain their own terms.
