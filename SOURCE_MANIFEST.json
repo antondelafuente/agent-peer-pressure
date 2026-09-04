@@ -1,0 +1,191 @@
+{
+  "release": "documentation-and-aggregate-data",
+  "snapshot_date": "2026-09-04",
+  "scope": "Source fingerprints refer to the author's original records; source notes and raw episode files are not distributed in this release. Private paths and infrastructure identifiers omitted.",
+  "validation": {
+    "figure_cells_reaggregated": 144,
+    "figure_cell_mismatches": 0,
+    "quote_blocks_checked_against_raw_episodes": 12,
+    "scorer_tool_schema_sha256": "2d879c3a665c4aaedbd5154ec58efa0879e7cd8e35fb05bb9a8e6f233c2645aa",
+    "scope": "Table consistency, selected quotation matching, and source fingerprint checks; not a full raw-rollout semantic audit or scientific close-audit"
+  },
+  "records": [
+    {
+      "id": "explore-norm-cascade-eval-lab-1",
+      "file": "NOTE.md",
+      "sha256": "9c220041087140b8216a3ec2103659468ea69c6d0c34abef5a6d485a3c248dc7"
+    },
+    {
+      "id": "ncs1-cascade-fork-1",
+      "file": "RESULTS.md",
+      "sha256": "9d339c56f7d2081e209e8185c626bb3d8449fe5180dfff710877bef3e027c9f0"
+    },
+    {
+      "id": "ncs1-contagion-fork-1",
+      "file": "RESULTS.md",
+      "sha256": "f67ece408b9046a77a67ab3034ad6635874e35de3f745125ec86e8b260f0d532"
+    },
+    {
+      "id": "ncs1-explore-deployment-sacrifice-krel-1",
+      "file": "NOTE.md",
+      "sha256": "1ed488b463cd53548df13d7db858ed4434c33bb227795e770e44bcd4460cc587"
+    },
+    {
+      "id": "ncs1-explore-deployment-sacrifice-krel-realpeers-1",
+      "file": "NOTE.md",
+      "sha256": "5437f715dcbc9aeebb489374b5b81a6c54b40d011bf2b0fe62b515d5f5730ac3"
+    },
+    {
+      "id": "ncs1-explore-notes-1",
+      "file": "NOTE.md",
+      "sha256": "a989cd277869936d151c2b65eeb921b3645bdd668b27b034e47578f5b49bb148"
+    },
+    {
+      "id": "ncs1-explore-notes-2",
+      "file": "NOTE.md",
+      "sha256": "65783aa4d5c83610a00edbbe570addf28ae7a93e89685befd0069ba7c2bb4725"
+    },
+    {
+      "id": "ncs1-explore-realpeers-1",
+      "file": "NOTE.md",
+      "sha256": "92eb5bf286b989c15affddab894395398204c9a4d8a95cbd4711cd2c6233c7d9"
+    },
+    {
+      "id": "ncs1-explore-report-1",
+      "file": "NOTE.md",
+      "sha256": "dcf224b8005702b431cd32e9ab2f6b2bbd7a63e53d71b5457aa645f7c99d5992"
+    },
+    {
+      "id": "ncs1-explore-sacrifice-krel-1",
+      "file": "NOTE.md",
+      "sha256": "ebbd1df124410daa47c11bfc5f3ad55557951271512b2abc4c090b180760e0a9"
+    },
+    {
+      "id": "ncs1-explore-sacrifice-natural-1",
+      "file": "NOTE.md",
+      "sha256": "c88c5cab0844cbc58bb1c4df30731045f3eae7de00331bbbf8203266a66e4b4f"
+    },
+    {
+      "id": "ncs1-explore-sacrifice-pilot-1",
+      "file": "NOTE.md",
+      "sha256": "c2e5a9e847082eed1d5ca93d7b6c3b04f7e9067dabfcaec80453111034eb4e02"
+    },
+    {
+      "id": "ncs1-explore-sacrifice-realpeers-1",
+      "file": "NOTE.md",
+      "sha256": "79339cdf611537ab9a10141a3a3b8def6f1b4d73209ebc0e87fe6c31b3a32215"
+    },
+    {
+      "id": "ncs1-explore-sacrifice-realpeers-2",
+      "file": "NOTE.md",
+      "sha256": "ad5c735d2a261daeeaf0a3953ba6ebfbefe3b942e2931058cd91ef11de121463"
+    },
+    {
+      "id": "ncs1-explore-slow-fail-1",
+      "file": "NOTE.md",
+      "sha256": "a9ca7dcc8a0d15010ca932fce76eaef0e40f201122c97e5c2a8ce7186913eb68"
+    },
+    {
+      "id": "ncs1-natural-notes-1",
+      "file": "RESULTS.md",
+      "sha256": "68dfd127fac1cc04c58ef5f48a540c28f186add1275540c8e089ae334ff5adc2"
+    },
+    {
+      "id": "ncs1-organism-serving-smoke-1",
+      "file": "NOTE.md",
+      "sha256": "bdaa21a4937d29aea432b778d409433c16e947b21e893205106c84b2717fe83b"
+    },
+    {
+      "id": "ncs1-outcome-free-urge-1",
+      "file": "RESULTS.md",
+      "sha256": "cc13e3fb7f9636ffc498923fa7abf3c7e24d558270e665f9c8bd9ec92c51d827"
+    },
+    {
+      "id": "ncs1-range-probe-1",
+      "file": "RESULTS.md",
+      "sha256": "cefab072ddd0152ac53e040ab35bdc075605b015011c40e13a5153ba185d7468"
+    },
+    {
+      "id": "ncs1-read-suspicion-1",
+      "file": "NOTE.md",
+      "sha256": "22fad79be616c1c620066c6d8993b5674ad6da155803a2269d440de492a012a6"
+    },
+    {
+      "id": "ncs1-thread-synthesis-1",
+      "file": "NOTE.md",
+      "sha256": "b39e82fd63966a7969993a8c15c0aea65d590d855e6428761da8dc21e50cb5a5"
+    },
+    {
+      "id": "ncs1-wide-map-1",
+      "file": "RESULTS.md",
+      "sha256": "f998d0429c69a1eec765beaaf1c6c01d0c8cb0ded2f899c2100ab5712f803714"
+    },
+    {
+      "id": "ncs1-explore-assigned-cheating-1",
+      "file": "NOTE.md",
+      "sha256": "af6ccf9f3dfad11107bb5c7b5d760ccb33916edfb12df246290b54fea24bf4f3"
+    },
+    {
+      "id": "ncs1-explore-assigned-sacrifice-1",
+      "file": "NOTE.md",
+      "sha256": "269b9e694773389683ef2b8450dfe102d861bfbe3b0f5c065c7d3ff978cc4198"
+    },
+    {
+      "id": "ncs1-explore-assigned-krel-1",
+      "file": "NOTE.md",
+      "sha256": "c5cdd8c3f9ed223a1b47ff6ec408dd21e1e793eb5f6aef97f5daf8704adc867b"
+    },
+    {
+      "id": "ncs1-explore-dose-cheating-1",
+      "file": "NOTE.md",
+      "sha256": "60169591cd200bd5f7aa92ce0159706a213a9d89758b91d73120bac0e47ee4ae"
+    },
+    {
+      "id": "ncs1-explore-dose-sacrifice-1",
+      "file": "NOTE.md",
+      "sha256": "bee8d5f9178044e087b4df7d14e36b398f7d1c06cf21ab9a74ecea9c33e4f7cb"
+    },
+    {
+      "id": "ncs1-explore-dose-krel-1",
+      "file": "NOTE.md",
+      "sha256": "3e9c95ac232e24e890ea4e0d8ca55531953b13469cf6766eb323b5574e8d9c1e"
+    },
+    {
+      "id": "ncs1-explore-dose-stock-1",
+      "file": "NOTE.md",
+      "sha256": "7c2078c7664483412aed930ac25f996eabda21f0b831a6bfcd319fd62b7f62e9"
+    }
+  ],
+  "figure_table_checks": {
+    "cheating": {
+      "episode_rows": 2240,
+      "series_C_cells": 36,
+      "mismatches": [],
+      "sha256": {
+        "table_cells.csv": "03e3bdb2a37828c17e6641466167624952663dbc03f81d2d32f8db290989b25c",
+        "table_grid.csv": "3fbe1268d949ae360ff0840494d2c73d3108e34d5df492df11b6c44016a91480",
+        "table_episodes.csv": "fa3845ae46bc41880ced859da2d38493593ca760f42faba4fec6be8e31e06c25"
+      }
+    },
+    "sacrifice": {
+      "episode_rows": 2240,
+      "series_C_cells": 36,
+      "mismatches": [],
+      "sha256": {
+        "table_cells.csv": "06877e329697b1bb6da9a4d4e268bfd2c3a8d907f8c168b4123ef927b265c5dc",
+        "table_grid.csv": "4d2920956c7430d206dd113c1a8a211844afd8093f48ed9e02ee6a0746a572f1",
+        "table_episodes.csv": "4cc5958452b3db1befde5d300642fa37590554bf08b74e167421671bf329bc24"
+      }
+    },
+    "krel": {
+      "episode_rows": 3040,
+      "series_C_cells": 72,
+      "mismatches": [],
+      "sha256": {
+        "table_cells.csv": "a08e11bd75e3c0dd04770663176bd1f109e06f27dfe1237ddf1992b704a50869",
+        "table_grid.csv": "2c7dc311989d556d7168bb43622537913916828e52c78f28b2c8e970b07063ad",
+        "table_episodes.csv": "9937665fd14793201ec81218e4ad1950413c9a61a97f3db00abd24b2d18295d3"
+      }
+    }
+  }
+}
